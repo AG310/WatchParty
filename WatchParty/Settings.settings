@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WatchParty" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FirstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MasteranimeUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CurrentSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SourceMasteranime</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
