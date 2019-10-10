@@ -1,2 +1,3 @@
 # WatchParty
-Watch Party!
+Content Streaming Automation Tool
+
