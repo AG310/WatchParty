@@ -58,5 +58,17 @@ namespace WatchParty {
                 this["CurrentSource"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string animeTitle {
+            get {
+                return ((string)(this["animeTitle"]));
+            }
+            set {
+                this["animeTitle"] = value;
+            }
+        }
     }
 }

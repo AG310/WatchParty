@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,6 +70,8 @@ namespace WatchParty {
         }
 
         private void StartMasteranime() {
+            string path = AppDomain.CurrentDomain.BaseDirectory;
+            logger.Log("The current directory is " + path);
             logger.Log("Starting browser...");
             logger.Log("Url set to: " + Settings.Default.MasteranimeUrl);
             website = new Masteranime();

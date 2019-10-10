@@ -27,6 +27,7 @@ namespace WatchParty {
                 case "SourceMasteranime":
                     SourceSelector.SelectedItem = SourceMasteranime;
                     MaUrlTextBox.Text = Settings.Default.MasteranimeUrl;
+                    ATUrlTextBox.Text = Settings.Default.animeTitle;
                     break;
                 case "SourceVLC":
                     SourceSelector.SelectedItem = SourceVLC;
@@ -48,6 +49,7 @@ namespace WatchParty {
             switch (currentSource_) {
                 case "SourceMasteranime":
                     Settings.Default.MasteranimeUrl = MaUrlTextBox.Text;
+                    Settings.Default.animeTitle = ATUrlTextBox.Text;
                     break;
                 case "SourceVLC":
                     break;

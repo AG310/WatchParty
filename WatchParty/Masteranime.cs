@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 
 namespace WatchParty {
@@ -14,6 +16,28 @@ namespace WatchParty {
 
         public override void StartBrowser() {
             browser = new Browser(Settings.Default.MasteranimeUrl);
+            if (Settings.Default.animeTitle.Length != 0)
+            {
+                Thread.Sleep(10000);
+                browser.browser_.FindElement(By.Id("keyword")).SendKeys(Settings.Default.animeTitle);
+                browser.browser_.FindElement(By.ClassName("btn")).Click();
+                Thread.Sleep(3500);
+                IList<IWebElement> titles = browser.browser_.FindElements(By.ClassName("cover"));
+                Console.WriteLine(titles.Count);
+                if (titles.Count == 1)
+                {
+                    titles[0].Click();
+                    Thread.Sleep(5000);
+                    IList<IWebElement> eps = browser.browser_.FindElements(By.ClassName("title"));
+                    Actions actions = new Actions(browser.browser_);
+                    actions.MoveToElement(eps[eps.Count - 1]);
+                    Thread.Sleep(3000);
+                    eps[eps.Count - 1].Click();
+                }
+
+            }
+            System.Threading.Thread.Sleep(7000);
+            
         }
 
         public override void StopBrowser() {

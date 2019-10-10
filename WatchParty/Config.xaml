@@ -16,6 +16,8 @@
             <Grid x:Name="MasteranimeSettingsGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="0,0,0,0">
                 <Label Content="Url:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="28" Height="25"/>
                 <TextBox x:Name="MaUrlTextBox" HorizontalAlignment="Left" Height="20" Margin="33,4,0,0" TextWrapping="NoWrap" AcceptsReturn="False"  VerticalAlignment="Top" Width="226"/>
+              <Label Content="Ani:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,18,0,0" Width="28" Height="25"/>
+              <TextBox x:Name="ATUrlTextBox" HorizontalAlignment="Left" Height="20" Margin="33,20,0,0" TextWrapping="NoWrap" AcceptsReturn="False"  VerticalAlignment="Top" Width="226"/>
             </Grid>
         </GroupBox>
         <Button x:Name="ConfigOkButton" Content="Ok" HorizontalAlignment="Left" Margin="127,174,0,0" VerticalAlignment="Top" Width="75" Click="ConfigOkButton_Click"/>

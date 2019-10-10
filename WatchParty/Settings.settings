@@ -11,5 +11,8 @@
     <Setting Name="CurrentSource" Type="System.String" Scope="User">
       <Value Profile="(Default)">SourceMasteranime</Value>
     </Setting>
+    <Setting Name="animeTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
